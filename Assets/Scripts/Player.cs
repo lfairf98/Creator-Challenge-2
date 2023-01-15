@@ -14,10 +14,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp("space"))
-        {
-            rb.AddForce(transform.up * force);
-            Debug.Log("Pressed primary button.");
-        }
+        if (Input.GetKeyUp("space")){rb.AddForce(transform.up * force);}
     }
 }
