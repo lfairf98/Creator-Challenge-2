@@ -23,6 +23,5 @@ public class Player : MonoBehaviour
     {
         LeaderboardUI.SetActive(true);
         LeaderboardController.SetActive(true);
-        //Debug.Log("Collided");
     }
 }
