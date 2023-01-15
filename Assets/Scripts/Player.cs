@@ -16,4 +16,9 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyUp("space")){rb.AddForce(transform.up * force);}
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Collided");
+    }
 }
