@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad0ab3736a35e447aceefb082ce3907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   despawnRange: -50
 --- !u!1 &3008486774592636758
 GameObject:

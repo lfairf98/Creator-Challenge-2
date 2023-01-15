@@ -5,6 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     Rigidbody rb;
+    public GameObject LeaderboardUI;
+    public GameObject LeaderboardController;
     public float force = 20f;
 
     void Start()
@@ -19,6 +21,8 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collided");
+        LeaderboardUI.SetActive(true);
+        LeaderboardController.SetActive(true);
+        //Debug.Log("Collided");
     }
 }
