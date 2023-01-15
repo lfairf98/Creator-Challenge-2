@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Rigidbody rb;
+    public float force = 20f;
+
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("space"))
+        if (Input.GetKeyUp("space"))
         {
+            rb.AddForce(transform.up * force);
             Debug.Log("Pressed primary button.");
         }
     }
